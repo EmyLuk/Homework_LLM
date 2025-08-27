@@ -1,0 +1,111 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+/* App.css - Modern, centered, clean look */
+}
+body {
+  background: #f6f8fa;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.app-container {
+  width: 700px;
+  margin: 48px auto 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 36px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 24px;
+  font-size: 2rem;
+  color: #2d3748;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-right: 10px;
+  background: #f9fafb;
+  transition: border 0.2s;
+}
+input[type="text"]:focus {
+  border: 1.5px solid #3182ce;
+  outline: none;
+}
+
+button {
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:disabled {
+  background: #b6c6d7;
+  cursor: not-allowed;
+}
+button:not(:disabled):hover {
+  background: #2563eb;
+}
+
+.recommendation-card {
+  background: #f1f5f9;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 24px 20px;
+  margin-top: 28px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recommendation-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #2563eb;
+  text-align: center;
+}
+.recommendation-card p {
+  margin: 8px 0;
+  text-align: center;
+  color: #374151;
+}
+
+.cover-image {
+  margin-top: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  max-width: 100%;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 18px 4vw 18px 4vw;
+  }
+  .recommendation-card {
+    padding: 14px 2vw;
+  }
+}
